@@ -10,10 +10,7 @@ from nltk.probability import FreqDist
 from summa.summarizer import summarize as summa_summarize # Importing from summa
 from collections import defaultdict
 from collections.abc import Mapping
-from transformers import pipeline
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense
+
 # Removed unnecessary print statement for sentiment analysis
 
 
