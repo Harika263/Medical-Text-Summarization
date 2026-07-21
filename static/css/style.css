@@ -936,7 +936,10 @@ button {
 .copyright_text a { color: #fffcf4; }
 .copyright_text a:hover { color: #fe6703; }
 
-
+/* Banner spacing */
+.banner_spacing{
+    padding-top: 110px;
+}
 
 
 

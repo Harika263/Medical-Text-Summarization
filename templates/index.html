@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <!-- basic -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- mobile metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- site metas -->
 <title>Text Summarizer</title>
 <meta name="keywords" content="">
@@ -34,10 +32,14 @@
 <body>
 	<!--header section start -->
     <div class="header_section">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="logo"><a href={{url_for('index')}}><img src="static/images/logo.jpg"></a></div>
+                    <div class="logo">
+    <a href="{{ url_for('index') }}">
+        <img src="static/images/logo.jpg" class="img-fluid" alt="Logo">
+    </a>
+</div>
                 </div>
                 <div class="col-md-9">
                     <div class="menu_text">
@@ -56,7 +58,11 @@
                             <a href={{url_for('about')}}>ABOUT</a>
                            <a href={{url_for('summary')}}>TEXT SUMMARY</a>
                             <a href={{url_for('keyword')}}>KEY WORD</a>
-                            <li><a href={{url_for('abstract')}} style="margin-top: 0px;margin-left: 704px;">ABSTRACTIVE SUMMARY</a></li>
+                            <li>
+                                <a href="{{ url_for('abstract') }}">
+                                    ABSTRACTIVE SUMMARY
+                                </a>
+                            </li>
                 </div>
                 </div>
                 <span  style="font-size:33px;cursor:pointer; color: #ffffff;" onclick="openNav()"><img src="static/images/toggle.png" class="toggle_menu"></span>
@@ -69,7 +75,7 @@
     </div>
     <!-- header section end -->
     <!-- banner section start -->
-    <div class="banner_section layout_padding"style="padding-top: 110px;">
+    <div class="banner_section layout_padding banner_spacing">
     	<div id="my_Controls" class="carousel slide" data-ride="carousel">
   <div class="overlay-content">
     <div class="carousel-item active">
@@ -77,7 +83,7 @@
     		<div class="overlay-content">
     			<h1 class="find_text">TEXT SUMMARIZATION </h1>
     			<h2 class="crush_text">BY USING NATURAL LANGUAGE PROCESSING </h2>
-    			<p class="long_text" style ="color : black;">Text summarization is the practice of breaking down long publications into manageable paragraphs or sentences. The procedure extracts important information while also ensuring that the paragraph's sense is preserved. This shortens the time it takes to comprehend long materials like research articles while without omitting critical information.</p>
+    			<p class="long_text text-dark">Text summarization is the practice of breaking down long publications into manageable paragraphs or sentences. The procedure extracts important information while also ensuring that the paragraph's sense is preserved. This shortens the time it takes to comprehend long materials like research articles while without omitting critical information.</p>
     		</div>
     		<div class="contact">
     			<div class="contact_bt"><a href={{url_for('summary')}}>Let's Start</a></div>
@@ -89,7 +95,7 @@
     		<div class="overlay-content">
     			<h1 class="find_text">TEXT SUMMARIZATION </h1>
     			<h2 class="crush_text">BY USING NATURAL LANGUAGE PROCESSING </h2>
-    			<p class="long_text" style ="color : black;">Text summarization is the practice of breaking down long publications into manageable paragraphs or sentences. The procedure extracts important information while also ensuring that the paragraph's sense is preserved. This shortens the time it takes to comprehend long materials like research articles while without omitting critical information.</p>
+    			<p class="long_text text-dark">Text summarization is the practice of breaking down long publications into manageable paragraphs or sentences. The procedure extracts important information while also ensuring that the paragraph's sense is preserved. This shortens the time it takes to comprehend long materials like research articles while without omitting critical information.</p>
     		</div>
     		<div class="contact">
     			<div class="contact_bt"><a href={{url_for('summary')}}>Let's Start</a></div>
@@ -101,7 +107,7 @@
     		<div class="overlay-content">
     			<h1 class="find_text">TEXT SUMMARIZATION </h1>
     			<h2 class="crush_text">BY USING NATURAL LANGUAGE PROCESSING </h2>
-    			<p class="long_text" style ="color : black;">Text summarization is the practice of breaking down long publications into manageable paragraphs or sentences. The procedure extracts important information while also ensuring that the paragraph's sense is preserved. This shortens the time it takes to comprehend long materials like research articles while without omitting critical information.</p>
+    			<p class="long_text text-dark">Text summarization is the practice of breaking down long publications into manageable paragraphs or sentences. The procedure extracts important information while also ensuring that the paragraph's sense is preserved. This shortens the time it takes to comprehend long materials like research articles while without omitting critical information.</p>
     		</div>
     		<div class="contact">
     			<div class="contact_bt"><a href={{url_for('summary')}}>Let's Start</a></div>
@@ -122,7 +128,7 @@
     </div>
     <!-- banner section end -->
     <!-- about section start -->
-    <div class="about_section_2 layout_padding" style="margin-top: 101px;">
+    <div class="about_section_2 layout_padding mt-5">
         <div class="container">
             <h1 class="about_text_2"><strong>ABOUT US</strong></h1>
             <p class="client_long_text">It is a long established fact that a reader will be distracted by the readable</p>
@@ -130,7 +136,7 @@
     </div>
     <div class="about_section">
     	<div class="row">
-    		<div class="col-md-6">
+    		<div class="col-lg-6 col-md-12">
     			<div class="about_taital">
     				<h1 class="about_text">ABOUT OUR PROJECT</h1>
     				<p class="long_text_2">Summarization is the task of condensing a piece of text to a shorter version, reducing the size of the initial text while at the same time preserving key informational elements and the meaning of content. Since manual text summarization is a time expensive and generally laborious task, the automatization of the task is gaining increasing popularity and therefore constitutes a strong motivation for academic research.</p>
@@ -138,7 +144,9 @@
     			</div>
     		</div>
     		<div class="col-md-6">
-    			<div class="about_img"><img src="static/images/2.jpg"></div>
+    			<div class="about_img">
+                    <img src="static/images/2.jpg" class="img-fluid rounded" alt="About Project">
+                </div>
     		</div>
     	</div>
     </div>
