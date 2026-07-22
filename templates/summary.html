@@ -84,8 +84,13 @@
 			<form action = "/summary" id="sumform" method = "POST">
 				<p>Enter the text you wish to summarize:</p>
 
-                                <textarea name = "input_text" id = "input_text" rows="6" cols="30" required="required"
-                                 value = "{{request.form['input_text']}}" id="ip4" style="width: 706.5px;height: 306.5px;"></textarea>
+                                <textarea
+                                    name="input_text"
+                                    id="input_text"
+                                    rows="10"
+                                    class="form-control"
+                                    required>
+                                </textarea>
 <!--				<p>Enter the number of sentences you like to be outputted in summary: </p>-->
 <!--				<p>-->
 <!--					<input type="number" name = "num_sentences" pattern =-->
@@ -96,12 +101,11 @@
 				</p>
 				<!-- <h2> my summary</h2> -->
 				<h4>Summarized Text: </h4>
-				<textbox name="output_text" id="output_text" maxlength="500000" style="width:900px;
-				height:250px">
+				<div id="output_text" class="form-control output-box">
 					{% for sentence in output_summary %}
 					<p>{{ output_summary }} </p>
 					<!-- {% endfor %} -->
-				</textbox>
+				</div>
 				<br>
 				<h4>Original Text:</h4>
 				<p>{{ original_text }}</p>

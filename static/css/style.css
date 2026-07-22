@@ -940,6 +940,56 @@ button {
 .banner_spacing{
     padding-top: 110px;
 }
+.toggle_menu{
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) saturate(100%)
+            invert(18%) sepia(100%)
+            saturate(6000%)
+            hue-rotate(220deg)
+            brightness(100%) contrast(100%);
+}
+.output-box{
+    width:100%;
+    min-height:250px;
+    overflow:auto;
+    padding:15px;
+    box-sizing:border-box;
+}
+/* Summary Page */
 
+#sumform{
+    width:100%;
+    max-width:750px;
+    margin:auto;
+}
 
+#input_text{
+    width:100% !important;
+    min-height:300px;
+    resize:vertical;
+    box-sizing:border-box;
+}
+
+.output-box{
+    width:100%;
+    min-height:250px;
+    padding:15px;
+    overflow:auto;
+}
+
+@media(max-width:768px){
+
+    #sumform{
+        padding:15px;
+    }
+
+    #input_text{
+        min-height:220px;
+    }
+
+    .output-box{
+        min-height:200px;
+    }
+}
 
